@@ -21,7 +21,7 @@ wire rst;
   assign uio_out = 0;
   assign uio_oe[7:0]  = 0;
   assign uio_out[7:0]  = 0;
-  assign uo_out[7:4] = 0;
+  assign uo_out[7:2] = 0;
   assign rst = !rst_n;
   generate
     top_module u_top_module (
