@@ -6,22 +6,10 @@ SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = project.v
-PROJECT_SOURCES += ddr_to_sdr_dual.v
-PROJECT_SOURCES += multi_ddr_to_sdr_dual.v
-PROJECT_SOURCES += adder_23bit.v
-PROJECT_SOURCES += adder_16x23bi.v
-PROJECT_SOURCES += integrator1.v
-PROJECT_SOURCES += integrator2.v
-PROJECT_SOURCES += integrator3.v
-PROJECT_SOURCES += integrator_top_module.v
-PROJECT_SOURCES += comb.v
-PROJECT_SOURCES += cic.v
-PROJECT_SOURCES += delay_line.v
-PROJECT_SOURCES += delay_module.v
-PROJECT_SOURCES += mux_shift.v
-PROJECT_SOURCES += i2s_bus.v
-PROJECT_SOURCES += supermic_top_module.v
-PROJECT_SOURCES += full_adder.v
+PROJECT_SOURCES += top_module.v
+PROJECT_SOURCES += pwm_generator.v
+PROJECT_SOURCES += i2s_rx_64x.v
+
 
 ifneq ($(GATES),yes)
 
