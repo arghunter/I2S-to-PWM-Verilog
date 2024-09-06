@@ -24,7 +24,7 @@ module tb ();
   wire [7:0] uio_oe;
 
   // Replace tt_um_example with your module name:
-  tt_um_supermic_arghunter user_project (
+  tt_um_i2s_to_pwm_arghunter user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
